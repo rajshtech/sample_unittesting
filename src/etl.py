@@ -13,7 +13,7 @@ def transform(df: pd.DataFrame) -> pd.DataFrame:
     """
     df = df.dropna(subset=["salary"])
     df["department"] = df["department"].str.upper()
-    df["salary_with_bonus"] = df["salary"] * 1.1
+    df["salary_with_bonus"] = (df["salary"] * 1.1).round(2)
     return df
 
 def load(df: pd.DataFrame, out_path: str) -> None:
