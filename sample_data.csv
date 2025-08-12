@@ -1,0 +1,5 @@
+name,department,salary
+Alice,engineering,100000
+Bob,marketing,80000
+Charlie,,90000
+Diana,engineering,
